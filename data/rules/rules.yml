@@ -1,0 +1,37 @@
+version: "2.0"
+rules:
+  - rule: Rule to map `help_me` intent
+    steps:
+    - intent: help_me
+    - action: action_init_tutorial
+
+  - rule: Rule to map `choose` intent
+    steps:
+    - intent: choose
+    - action: action_help_menu
+
+  - rule: Rule to map `router` intent
+    steps:
+    - intent: router
+    - action: action_router
+
+  - rule: Respond to chitchat
+    steps:
+    - intent: chitchat
+    - action: respond_chitchat
+
+  - rule: Submit form
+    condition:
+    # Condition that form is active.
+    - active_loop: open_get_data
+    steps:
+    - action: open_get_data
+    - active_loop: null
+    # The action we want to run when the form is submitted.
+    - action: action_search_resource
+
+  - rule: Implementation of the Two-Stage-Fallback
+    steps:
+    - intent: nlu_fallback
+    - action: action_two_stage_fallback
+    - active_loop: action_two_stage_fallback

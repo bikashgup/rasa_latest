@@ -1,0 +1,37 @@
+context,message,buttons,button_context,object_type,attribute,action,prev_context_leaf,prev_action_leaf
+help,I'm here to help. What do you want to know more about?,"['Contacts', 'School info', 'Course & grades']","['help_contact_school','School Info','help_course']",,,,,
+School Info,,,,,,action_queryredis_csv,help,action_help_menu
+help_course,What would you like to know about your courses?,"['Announcements', 'Assignments', 'Find answers from my course','Quiz', 'Grades', 'Exam','⬅ Back']","['help_announcements', 'help_assignments',  'help_search_in_course', 'help_quiz','help_grades','help_exam','help']",,,,,
+help_contact_school,Alright! I can give you:,"['School email', 'School address', 'School number', 'School social media', '⬅ Back']","['help_school_email','help_school_address','help_school_number','help_school_social', 'help']","['school','school', 'school', 'school','null']","['email','address','contactNumber','null','null']",,,
+help_school_email,,,,['school'],['email'],query_school,help_contact_school,action_help_menu
+help_school_address,,,,['school'],['address'],query_school,help_contact_school,action_help_menu
+help_school_number,,,,['school'],['contactNumber'],query_school,help_contact_school,action_help_menu
+help_school_social,Which social media handle do you need?,"['Facebook','Instagram','Twitter','Youtube', '⬅ Back']","['help_school_fb','help_school_ig','help_school_twitter','help_school_youtube','help_contact_school']","['school','school', 'school', 'school','null']","['fbProfileLink','instaProfileLink','twitterHandle','youtubeAccount','null']",,,
+help_school_fb,,,,['school'],['fbProfileLink'],query_school,help_school_social,action_help_menu
+help_school_ig,,,,['school'],['instaProfileLink'],query_school,help_school_social,action_help_menu
+help_school_twitter,,,,['school'],['twitterHandle'],query_school,help_school_social,action_help_menu
+help_school_youtube,,,,['school'],['youtubeAccount'],query_school,help_school_social,action_help_menu
+help_announcements,What would you like to know about your announcements:,"['Class Announcements', 'General Announcements', '⬅ Back']","['help_class_announcements', 'help_general_announcements', 'help_course']",,,,,
+help_assignments,What would you like to know about your assignments:,"['Upcoming Assignments', 'Late Assignments', '⬅ Back']","['help_upcoming_assignments', 'help_late_assignments', 'help_course']",,,,,
+help_upcoming_assignments,,,,,,query_assignments,help_assignments,action_help_menu
+help_late_assignments,,,,,,query_assignments,help_assignments,action_help_menu
+help_class_announcements,,,,,,query_announcement,help_announcements,action_help_menu
+help_general_announcements,,,,,,query_announcement,help_announcements,action_help_menu
+help_search_in_course,,,,,,list_course,help_search_in_course,action_help_menu
+help_quiz,what would you like to know about your quiz?,"['Not Attempted', 'Passed','Failed', '⬅ Back']","['help_not_attempted_quiz', 'help_passed_quiz', 'help_failed_quiz','help_course']",,,,,
+help_grades,,,,,,query_grade,help_course,action_help_menu
+help_exam,What would you like to know about your exam ?,"['Not Attempted', 'Passed','Failed', '⬅ Back']","['help_not_attempted', 'help_passed', 'help_failed','help_course']",,,,,
+help_not_attempted,,,,,,query_exam,help_exam,action_help_menu
+help_passed,,,,,,query_exam,help_exam,action_help_menu
+help_failed,,,,,,query_exam,help_exam,action_help_menu
+help_not_attempted_quiz,,,,,,query_quiz,help_quiz,action_help_menu
+help_passed_quiz,,,,,,query_quiz,help_quiz,action_help_menu
+help_failed_quiz,,,,,,query_quiz,help_quiz,action_help_menu
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,bijay,,,

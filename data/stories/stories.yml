@@ -1,0 +1,32 @@
+version: "2.0"
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+- story: bye
+  steps:
+  - intent: bye
+  - action: utter_bye
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_great
+- story: deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+- story: positive reaction
+  steps:
+  - intent: react_positive
+  - action: utter_react_positive
+- story: negative reaction
+  steps:
+  - intent: react_negative
+  - action: utter_react_negative
+  - intent: canthelp
+  - action: utter_canthelp
+- story: tell jokes
+  steps:
+  - intent: telljoke
+  - action: utter_jokes

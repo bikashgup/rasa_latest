@@ -1,0 +1,638 @@
+version: "2.0"
+nlu:
+- intent: help_me
+  examples: |
+    - help me
+    - hey help me
+    - hey help me here
+    - help
+    - i need help
+    - can you help me
+    - teach me how to proceed conversation
+    - teach me
+    - hey teach me
+    - tutorial to proceed conversation
+    - how to start conversation
+    - start conversation
+    - proceed conversation
+    - tutorial
+    - let's start
+    - lets start
+    - how to use
+    - how to use chatbot
+    - start a tour
+    - give me a tour
+    - will you give me a start
+    - let's have a tour
+    - let get a tour
+    - give some tour
+    - teach me the process
+    - how to use this chatbot
+    - how may i use this
+    - i don't know how to proceed the conversation
+    - demo tutorial
+    - demo on how to start
+    - demo to start conversation
+    - demo guide
+    - What can you do for me?
+    - Great, is there anything else you can do, bot?
+    - How can you help me
+    - How you help me?
+    - I need help
+    - I need some help
+    - What are my options
+    - What are you able to do?
+    - What can I ask you?
+    - What can I do?
+    - What can you demo
+    - What can you do
+    - What can you tell me?
+    - What do you do
+    - anything els
+    - come back
+    - cool! can I do something else here?
+    - hello what can you do for me
+    - help please
+    - help pls
+    - help?
+    - hi, rubi what do you do?
+    - hm that doesnt quite help me is there anything else you can do?
+    - how can i use you
+    - how can you help me
+    - how can you help me?
+    - how can you help?
+    - how does this work?
+    - how u can help me
+    - how you help me
+    - i asked you if you can do anything else
+    - i don't know what i want
+    - more info
+    - now what?
+    - options
+    - so now what
+    - so what can you do
+    - so what can you help me with?
+    - tell me something you can do
+    - tell me what's your skill
+    - um what now
+    - what are all the things you understand?
+    - what are the options?
+    - what can I do with this bot
+    - what can i do here
+    - what can i do now
+    - what can u do
+    - what can we talk about?
+    - what can you answer
+    - what can you do?
+    - what can you offer me?
+    - what can you tell me
+    - what can you?
+    - what cn u do for me ?
+    - what do you do
+    - what do you do?
+    - what do you know except this?
+    - what else can I do here?
+    - what else can i do
+    - what else can i do?
+    - what else can you do?
+    - what else can you help with?
+    - what i have to do
+    - what is this bot for
+    - what u can do
+    - what u can do?
+    - what you can do
+    - what you can do for me?
+    - what you can do?
+    - what you do
+    - what you doing?
+    - what you talk about?
+    - you can hep me
+    - Help!
+    - Are you able to help me?
+    - I need you right now
+    - I need your help
+    - assistance
+    - do you want to help me
+    - What are all the things you can do?
+    - I want your help
+    - I need you to help me
+    - would you help me
+    - are you going to help me
+    - please help me
+    - can you help me with something
+    - can you help
+    - need help
+    - can you help us
+    - can you do something for me
+    - can you help me with that
+    - you can help me
+    - help me with a problem
+    - need your help
+    - alright then whats next
+- intent: help_contact
+  examples: |
+    - Contact information
+    - contact info please
+    - Can you give me contact details
+    - Give me contacts
+    - Find me contacts
+    - Contact details
+    - contact
+    - Ask for contact
+    - contact inquiry
+    - I need contact information please
+    - Where can I find contact information?
+    - Can you give me contact information?
+    - can you assit me with finding contact information
+    - find contacts for me Rubi
+    - how can i get contact info
+    - is there any contact info
+    - please, give me contact info
+    - tell me the contact info you have
+    - can i get contact information
+- intent: help_contact_school
+  examples: |
+    - I want to contact the school
+    - How do i contact college
+    - contact college
+    - contacts for the school please
+    - contacts for school
+    - Give me the contact details of the school
+    - School contact details
+    - Where can i find school contact info
+    - How can I contact the college
+    - help me contact the school
+    - contact of the school
+    - connect with school
+    - how do i connect with the school
+- intent: help_school_email
+  examples: |
+    - email of the school
+    - what is the email address of the school?
+    - give me the email address of the school
+    - does the school have an email address
+    - do you know the email address of the school Rubi
+    - Give me the school gmail.
+    - School gmail
+    - school email address
+    - let me know the shcool email address
+    - school gmail id
+    - what is the email id of the school
+    - email id of the college
+    - college gmail address
+    - help me to get college gmail
+    - college email account
+    - what is the school email?
+    - Is there any school email?
+    - what is the school email address?
+    - how can I email your school?
+    - tell me the school email?
+    - any school email?
+    - is there any school email?
+    - can I get a school email?
+    - school email
+    - Give me the school email
+    - What is your school email
+    - any school contact email?
+    - any digital address of the school to contact?
+    - i need an email address of school
+    - what is the email of school
+    - what is my school email
+    - tell me the email address of school
+    - can you give me email of school
+    - what is the school email i need to email
+    - I need  school email now. how can I get i
+    - is there anyway to get school email
+    - there is need of school email how can i get it
+    - currently i need school email
+    - I need to get  school e-mail, how can I do it?
+    - I need  school email how do I get it?
+    - How can I get  school email when i need it?
+    - I need a school Email
+    - I need my school email address
+- intent: help_school_address
+  examples: |
+    - where is the school located?
+    - address of the school
+    - give me the school location.
+    - where is the school?
+    - where is the college situated?
+    - location of the college.
+    - help me to locate the school
+    - where is the school situtated?
+    - college location
+    - Full address of the college
+    - How do i get to college
+    - how can i find your college?
+    - can you give me the college location?
+- intent: help_school_number
+  examples: |
+    - give me the contact number of the school
+    - school phone number
+    - what is the college phone number
+    - contact number of the college
+    - phone number of the school
+    - help me to get the school number
+    - college number
+    - phone number of the college
+    - college landline number
+    - give me the college landline number
+    - what is the school phone number?
+    - Do you have the phone number for the college
+    - Do you know college phone number
+    - Does the school have a phone number
+- intent: help_school_social
+  examples: |
+    - give me the social media of the school
+    - school social media accounts
+    - social meida of the college
+    - school accounts in social media
+    - social media accounts of the college
+    - give me the link to college social accounts
+    - college in social media
+    - college social accounts information
+    - Does the  school have social media accounts
+- intent: help_school_fb
+  examples: |
+    - what is the facebook page of the college
+    - Does the college have a facebook page
+    - college facebook page
+    - college in facebook
+    - facebook page of the school
+    - college FB account
+    - FB page of the college
+    - give me the college facbook link
+    - college page and goups
+    - school FB page
+    - let me know the fb page of the college
+    - is there fb page of the college?
+    - can you provide me the college facebook profile?
+- intent: help_school_ig
+  examples: |
+    - instagram of college
+    - college in insta
+    - what is the instagram of the college
+    - school instagram account
+    - what is the insta account of the college?
+    - college instagram
+    - school in instagram
+    - Does the college have an instagram account?
+    - insta account of the college.
+- intent: help_school_twitter
+  examples: |
+    - what is the twitter handle of the school
+    - twitter account of the college
+    - college twitter account
+    - give me the twitter handle fo the school
+    - tiwtter account of the college
+    - is college in twitter?
+    - school twiiter handle
+    - let me know the college twitter
+    - college twitter
+- intent: help_school_youtube
+  examples: |
+    - youtube channel of the college
+    - college youtube channel
+    - what is the youtube account of the college
+    - is there any youtube channel of the college?
+    - college videos on youtube
+    - what is the youtube account of the college?
+    - does school has youyube channel?
+    - school youtube
+    - college youtube
+    - school contact information
+    - Give me contacts of school
+    - how can i get contact informations of school
+    - is there any contact info of school
+    - please, give me contact info of school
+- intent: help_course
+  examples: |
+    - course related informations
+    - Give me infos on course related matters
+    - Can i ask my course related questions
+    - I want to know more about my course
+    - Course information details
+    - What can you give me on college courses
+    - All course related information
+    - College courses
+    - leh me know the course related things
+    - course related
+    - what are the course related things
+- intent: help_assignments
+  examples: |
+    - What are my assignments?
+    - Give me my assignments.
+    - Ruby, Tell me about my assignments
+    - Assignments
+    - homework
+    - my homework
+    - Help me get my assignments
+    - Where can i find assignments
+    - Assignment download
+    - Help me find my assignments
+    - I want access to my assignments
+    - Where are the assignments
+    - How to access assignments
+    - Assignments access location
+    - I need to find my assignment
+    - my assignment
+    - assignement
+    - assignements
+    - assigenement
+    - assigenements
+    - my assignements
+    - my assigenement
+    - my assigenements
+- intent: help_upcoming_assignments
+  examples: |
+    - What are my upcoming assignments.
+    - Coming assignments
+    - upcoming assignments
+    - my upcoming assignments
+    - my upcoming homework
+    - upcoming homework
+    - Are there any nearby assignments?
+    - Upcoming assignments info
+    - I need information on upcoming assignments
+    - Can you update me about nearby assignments
+    - I need to know about future assignments
+    - Nearing assignments details
+    - Are there any assignments forthcoming
+    - What assignments should i do next?
+    - Impending assignments
+    - upcoming assignement
+    - upcoming assignements
+    - upcoming assigenement
+    - upcoming assigenements
+    - my upcoming assignements
+    - my upcoming assigenement
+    - my upcoming assigenements
+- intent: help_late_assignments
+  examples: |
+    - Am i late on any assignments
+    - Assignments that i am late
+    - What are my missed assignments?
+    - Missed assignments
+    - Due assignments
+    - Due homework
+    - Missed homework
+    - late submitted task
+    - Assignment left to submit
+    - Incomplete homework list
+    - Unsubmitted homework
+    - overdue assignments
+    - late submitted homework
+    - What assignments do i have to left to submit
+    - Are there any due assignment to submit
+    - I need to find out if i missed any assignment
+    - Find left assignments
+    - Assignments left to submit
+    - late assignement
+    - late assignements
+    - late assigenement
+    - late assigenements
+    - my late assignements
+    - my late assigenement
+    - my late assigenements
+- intent: help_quiz
+  examples: |
+    - informations on my quizes
+    - update me about my quiz
+    - give me infos on my quizes
+    - what are my quizzes?
+    - my quiz
+    - quiz
+    - Give me info on my quizes
+    - Are there any quizzes?
+    - Information on quizzes
+    - Quizzes
+    - What quizzes are there
+- intent: help_not_attempted_quiz
+  examples: |
+    - what quizzes are there
+    - what are my not attempted quiz
+    - give me info on my not attempted quiz
+    - is there any remaining quizzes?
+    - can you give me info on my not attempted quiz
+    - not attempted quiz
+    - Are there any quizzes for me in this week?
+    - Ruby, Tell me the quizzes i need to complete this week.
+    - Is there any upcoming quiz this week
+    - My quiz in this month
+    - Are there any quizzes for me in this month?
+    - Tell me the quizzes i need to complete this month.
+    - Upcoming quizzes this month
+    - Are there any quizzes in this month
+    - I need information on quizzes upcoming this month
+    - not attempted quizzes
+    - remaining quiz
+    - remaining quizzes
+- intent: help_passed_quiz
+  examples: |
+    - what are my passed quiz
+    - give me info on my passed quiz
+    - can you give me info on my passed quiz
+    - passed quiz
+    - passed quizzes
+- intent: help_failed_quiz
+  examples: |
+    - what are my failed quiz
+    - give me info on my failed quiz
+    - can you give me info on my failed quiz
+    - failed quizzes
+    - what are my failed quizzes
+- intent: help_exam
+  examples: |
+    - informations on my exams
+    - informations on my exam
+    - update me about my exam
+    - give me infos on my exam
+    - what are my exams?
+    - my exam
+    - exams
+    - Give me info on my exams
+    - Information on exams
+    - Exams
+- intent: help_not_attempted
+  examples: |
+    - what are my not attempted exam
+    - What exams are there
+    - Are there any exams?
+    - Are there any remaining exams?
+    - give me info on my not attempted exam
+    - can you give me info on my not attempted exam
+    - not attempted exam
+    - Are there any exams for me in this week?
+    - Ruby, Tell me the exams i need to complete this week.
+    - Is there any upcoming exam this week
+    - My exam in this month
+    - Are there any exam for me in this month?
+    - Tell me the exams i need to complete this month.
+    - Upcoming exam this month
+    - Are there any exam in this month
+    - I need information on exam upcoming this month
+    - remaining exams
+- intent: help_passed
+  examples: |
+    - what are my passed exam
+    - give me info on my passed exam
+    - can you give me info on my passed exam
+    - passed exam
+    - passed exams
+- intent: help_failed
+  examples: |
+    - what are my failed exam
+    - give me info on my failed exam
+    - can you give me info on my failed exam
+    - failed exams
+    - what are my failed exams
+- intent: help_grades
+  examples: |
+    - Hey tell me about my grades
+    - Rubi, What are my grades?
+    - Give me my grades
+    - Help me find my grades
+    - Where can i find my grades
+    - What are my grades
+    - Can you help me find my grades
+    - I need information on my grades
+    - Can you give me my grades
+    - give me info on my grades
+    - can you tell me my grades
+    - my grades
+    - what is my percentage
+    - how much percentage did I get
+    - what is my gpa
+    - gpa
+    - grades
+    - percentage
+    - my gpa
+    - my percentage
+- intent: help_search_in_course
+  examples: |
+    - I want to search for resources here.
+    - I want to search for resources but don't know how
+    - I just want to search for resources to learn.
+    - I want to search resources for information.
+    - I wanted to ask questions about my course.
+    - just wanted to ask questions about my course, specifically about my subject areas and course content?
+    - I just wanna ask questions about my course?
+    - I would like to ask questions about my current course.
+    - I want to ask questions about course contents and about my subject areas.
+    - I want to search for resources and course information.
+    - I want to search for resources or things.
+    - I just wanted to search resources about my course information?
+    - I really want to ask questions about my courses?
+    - I am only interested to find out about my course.
+    - really want to ask questions about my course.
+    - I actually want to ask questions about my course.
+    - actually want to ask questions about courses.
+    - actually wanted to ask  questions related to my courses?
+- intent: help_announcements
+  examples: |
+    - Announcements
+    - my announcement
+    - what are my announcement
+    - give me my annoucement
+    - list me the announcement
+    - What did they announced?
+    - What are the announcements?
+    - Give me the new announcements?
+    - What are the messages announced?
+    - What are the statements declared?
+    - What are the statements announced?
+    - Announcements announced.
+    - List me the statements.
+    - Let me know the announcements made so far.
+    - What are the announces?
+    - If there is any announcements?
+    - Inform me the what announcements are there?
+    - May i know the statements announced?
+    - What is the announcement?
+    - What are the announcements made?
+    - What are all the announcements?
+    - What are some announcements?
+    - What kinds of announcements are there?
+    - What do you think announcements are?
+    - What are announcements? What are they?
+    - What are the statements made by the college?
+    - Do they have any announcements, on the courses?
+    - What messages are stated ?
+    - What announcements do they make on the courses recently?
+    - Do college have any announcements, on the course?
+    - How do we check our announcement made on courses?
+    - Do college have any announcements still now, on courses?
+    - Can they give us any announcements on the college?
+    - What are their announcements, on the college?
+    - In the college announcement will I have any announcements?
+    - Do they have announcements, on the college recently?
+    - What announcements do they make by the college ?
+    - Do they have any announcements, in the college?
+    - How do we check our college announcement?
+    - Do they have any announcements, on college?
+- intent: help_class_announcements
+  examples: |
+    - class announcements
+    - What are the class announcements?
+    - Give me the new class announcements made ?
+    - class announcements announced.
+    - Give me the class announcements made so far.
+    - If there is any  class announcements?
+    - Inform me the what class announcements are there?
+    - What are all the class announcements?
+    - Can you give us any class announcements on the college?
+    - Inform me about new class announcement
+    - list me class announcement
+    - what are the class announcement recently made
+    - can you give me class announcement
+    - How do we check our class  announcement?
+    - Do they have any class announcements, on college?
+    - class announcement
+    - class annoucements
+- intent: help_general_announcements
+  examples: |
+    - general announcements
+    - What are the general announcements?
+    - Give me the new general announcements made ?
+    - general announcements announced.
+    - Give me the genral announcements made so far.
+    - If there is any general announcements?
+    - Inform me the what general announcements are there?
+    - What are all the general announcements?
+    - Can you give us any general announcements on the college?
+    - Inform me about new general announcement
+    - list me general announcement
+    - what are the general announcement recently made
+    - can you give me general announcement
+    - How do we check our general  announcement?
+    - Do they have any general announcements, on college?
+    - general annoucement
+- intent: search_resource_nlu
+  examples: |
+    - [search](command) What is thermodunamics?
+    - [search](command) What are margins in SVM?
+    - [search](command) Heat and Temperature
+    - [search](command) Inheritance and Polymorphism
+    - [search](command) Regular expression parsing
+    - [search](command) How are babies born?
+    - [search](command) Sameer Maskey
+    - [search](command) Who is the mother of computer?
+    - [search](command) formula to calculate angular velocity in rotational motion
+    - [search](command) AI and its application
+    - [search](command) Debugging and Profiling
+    - [search](command) How to find intercepts of line?
+    - [search](command) Who killed Bahubali
+    - [search](command) lifecycle of frog
+    - [search](command) Valdimir Putin
+    - [search](command) mathematical expression for Beta distribution
+    - [search](command) if peter piper picked a peck of picked pepper, Where's the peck of pickled peppers Peter Picked?
+    - [search](command) How to calculate projectile distance?
+    - [search](command) Primary and Foreign Keys
+    - [search](command) Informed search problems
+    - [search](command) Constrained satisfaction problems(CSPs)
+    - [search](command) Mode of discrete data
+    - [search](command) Expecto Patronum, Expeliarmus!!
+    - [search](command) how much wood would the woodchuck chuck if the woodchuck could chuck wood
+- regex: search_resource_nlu
+  examples: |
+    - search [\w\s]+

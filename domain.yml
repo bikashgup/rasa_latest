@@ -1,0 +1,259 @@
+version: "2.0"
+intents:  
+- help_me
+- choose
+- router
+- fuseclassroom
+- out_of_scope
+- greet
+- react_positive
+- bye
+- affirm
+- deny
+- canthelp
+- react_negative
+- help_course
+- help_contact
+- chitchat
+# - help_teacher_email
+# - help_teacher_room
+# - help_teacher_hours
+# - help_contact_teacher
+- help_contact_school
+- help_school_social
+- help_quiz
+- help_not_attempted_quiz
+- help_passed_quiz
+- help_failed_quiz
+- help_exam
+- help_not_attempted
+- help_passed
+- help_failed
+- help_school_fb
+- help_school_ig
+- help_school_twitter
+- help_school_youtube
+- help_school_address
+- help_school_number
+- help_school_email
+- help_assignments
+- help_upcoming_assignments
+- help_late_assignments
+- help_search_in_course
+- help_grades
+- help_announcements
+- help_class_announcements
+- help_general_announcements
+- trigger_rephrase
+- telljoke
+- search_resource_nlu
+- Awards
+- Fees
+- Extra-curricular activities
+- Exams
+- Notices
+- Infrastructure and facilities
+- Clubs
+- Scholarships
+- Operational hours
+- Events
+
+
+
+entities:
+- language
+- name
+- product
+- location
+- command
+
+slots:
+  attribute:
+    type: any
+    influence_conversation: false
+  context:
+    type: any
+    influence_conversation: false
+  course_id:
+    type: any
+    influence_conversation: false
+  data:
+    type: text
+  feedback_value:
+    type: categorical
+    values:
+    - positive
+    - negative
+  new_action:
+    type: any
+    influence_conversation: false
+  buttonid:
+    type: any
+    influence_conversation: false
+  object_type:
+    type: any
+    influence_conversation: false
+  teacher_name:
+    type: any
+    influence_conversation: false
+  command:
+    type: any
+    influence_conversation: false
+
+responses:
+  utter_ask_rephrase:
+  - text: Can you rephrase the question? 😅 
+  utter_deny:
+  - text: It's ok. 😅 
+  
+  utter_default:
+  - text: Sorry, I didn't get that. 😅 Could you please rephrase?
+  - text: I didn't understand 🤔, could you rephrase that? 
+  - text: I'm sorry 🤔🤔, but I didn't understand you. Could you please rephrase what you
+      just said?
+  - text: I'm afraid I didn't get what you just said. 😅 Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message? 😅
+  - text: 🤔 Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_suggestion:
+  - text: It seems I don't have the skills to help you with this yet, but please
+      still ask any questions you have so that I can learn to answer them in the future! 
+  utter_greet:
+  - text: Hey! 😎 How are you? 
+  - text: Hey there! 🤠
+  - text: Hi!
+  - text: Hi! 😊
+  - text: Hello!
+  utter_canthelp:
+  - text: I'm sorry I couldn't help you. 
+  utter_did_that_help:
+  - text: Did that help you? 
+  utter_react_negative:
+  - text: 😕
+  - text: 😞
+  - text: 😥
+  - text: 😢
+  utter_react_positive:
+  - text: 😄
+  - text: 😊
+  - text: 👍 
+  - text: 😍
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  utter_ask_data:
+  - text: Go ahead! Type the question below! 🤖 *beep boop*
+  utter_great:
+  - text: Great! 👍
+  - text: That's great! 🙌
+  - text: Awesome! 🎉
+  utter_jokes:
+  - text: Lightning doesn't mean to shock people, it just doesn't know how to conduct
+      itself.
+  - text: Knowledge is knowing a tomato is a fruit. Wisdom is not putting it in a
+      fruit salad.
+  - text: The only substitute for good manners is fast reflexes.
+  - text: Reading whilst sunbathing makes you well red.
+  - text: Evening news is where they begin with 'Good evening', and then proceed to
+      tell you why it isn't.
+  - text: A bus station is where a bus stops. A train station is where a train stops.
+      On my desk, I have a work station.
+  - text: Did you know that dolphins are so smart that within a few weeks of captivity,
+      they can train people to stand on the very edge of the pool and throw them fish?
+  - text: A bank is a place that will lend you money, if you can prove that you don't
+      need it.
+  - text: A clear conscience is usually the sign of a bad memory.
+  - text: My first job was working in an orange juice factory, but I got canned because
+      I couldn't concentrate.
+  - text: Worrying works! 90% of the things I worry about never happen.
+  - text: A bus is a vehicle that runs twice as fast when you are after it as when
+      you are in it.
+  - text: Always remember that you are unique; just like everyone else.
+  - text: Can't stand it when a sentence doesn't end the way you think it OCTOPUS!
+  - text: I was going to donate blood until the lady got all personal and started
+      asking "Who's blood is this?" and "How did you get it?"
+  - text: If swimming is so good for your figure, how do you explain whales?
+  - text: I don't have a big ego. I'm way too cool for that.
+  - text: Why couldn't the bicycle stand? Because it was two tired.
+  - text: Originality is the art of concealing your sources.
+  - text: Despite the cost of living, have you noticed how popular it remains?
+  - text: My GPS keeps saying, "Go back 20 years and enter law school."
+  - text: If I eat healthy today then I can have one piece of candy as a reward. If
+      I eat unhealthy, I can have the whole bag.
+  - text: My mother was so overprotective we were only allowed to play rock, paper.
+  - text: I don't know what 'gluten free' means but I'm adding it to my resume.
+  - text: Don't worry. Your secret is safe with me. Everyone I told swore they wouldn't
+      tell anyone else.
+  - text: Your call is very important to us. Please enjoy this 40 minute flute solo.
+  - text: The barman says "we don't serve time travellers here". A time traveller
+      walks into a bar.
+  - text: Drinking and drugs will not solve all your problems. That's what chocolate
+      and ice cream are for.
+  - text: If you notice a person is deceiving you, they must not be deceiving you
+      very well.
+  - text: My boss has told so many unfunny jokes today, I've forgotten what my real
+      laugh sounds like.
+  - text: A cat jumps into a cab and yells, “Follow that red dot!”
+  - text: The trouble with real life is that there is no danger music.
+  - text: Unless you can be Batman, always be yourself.
+  - text: You know it's time to reconsider your diet when you buy a hulahoop and it
+      fits.
+  - text: In order to catch a bus, first one must think like a bus.
+  utter_bye:
+    - text: Goodbye!
+    - text: Bye!
+    - text: Ciao!
+    - text: Bye, was nice talking to you!
+    - text: Bye bye!
+actions:
+- action_queryredis_csv
+- action_queryredisid
+- action_elastic_redis
+- action_default_ask_affirmation
+- action_default_fallback
+- validate_open_get_data
+# - query_teacher
+- action_init_tutorial
+- action_help_menu
+- query_school
+# - list_teacher
+- list_course
+- query_announcement
+- query_club
+- utter_greet
+- utter_did_that_help
+- action_router
+- action_search_resource
+- utter_ask_data
+- query_assignments
+- query_quiz
+- query_grade
+- action_intent_slot_map
+- respond_chitchat
+- respond_fuseclassroom
+- respond_out_of_scope
+- action_bottom_top_menu
+- action_bottom_top_qa
+- action_top_menu_nlu
+- action_leaf
+- respond_smalltalk
+- utter_ask_rephrase
+- utter_default
+- utter_suggestion
+- utter_canthelp
+- utter_react_negative
+- utter_react_positive
+- utter_anything_else
+- utter_great
+- utter_jokes
+- action_search_resource_nlu
+- query_exam
+
+forms:
+  open_get_data:
+    required_slots:
+      data:
+      - type: from_text
+        intent: None
+
+session_config:
+  session_expiration_time: 40
+  carry_over_slots_to_new_session: false

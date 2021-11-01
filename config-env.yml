@@ -1,0 +1,17 @@
+ 
+# Configuration file 
+elastic:
+  host: 172.20.20.84
+  port: 9200
+  INDEXNAME: chatbot
+transformer:
+  host: rubicon-chatbot-taas
+  port: 5000
+redis:
+  host: redis
+  port: 6379
+actions:
+  action_search_resource:
+    user_name: ""
+    password: ""
+    url: ""

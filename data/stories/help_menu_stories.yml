@@ -1,0 +1,54 @@
+version: "2.0"
+stories:
+- story: intermediate help intent to action
+  steps:
+  - or:
+    - intent: help_contact
+    - intent: help_contact_school
+    - intent: help_school_social
+    - intent: help_assignments
+    - intent: help_announcements
+    - intent: help_quiz
+    - intent: help_exam
+    - intent: help_course
+  - action: action_intent_slot_map
+- story: leaf node intent to action
+  steps:
+  - or:
+    - intent: help_school_email
+    - intent: help_school_address
+    - intent: help_school_number
+    - intent: help_school_fb
+    - intent: help_school_ig
+    - intent: help_school_twitter
+    - intent: help_school_youtube
+    - intent: help_class_announcements
+    - intent: help_general_announcements
+    - intent: help_upcoming_assignments
+    - intent: help_late_assignments
+    - intent: help_grades
+    - intent: help_not_attempted_quiz
+    - intent: help_passed_quiz
+    - intent: help_failed_quiz
+    - intent: help_not_attempted
+    - intent: help_passed
+    - intent: help_failed
+  - action: action_leaf
+- story: regex search resource
+  steps:
+  - intent: search_resource_nlu
+  - action: action_search_resource_nlu
+- story: elastic search scholarship
+  steps:
+  - or:
+    - intent: Fees
+    - intent: Scholarships
+    - intent: Extra-curricular activities
+    - intent: Exams
+    - intent: Notices
+    - intent: Clubs
+    - intent: Awards
+    - intent: Infrastructure and facilities
+    - intent: Operational hours
+    - intent: Events
+  - action: action_elastic_redis

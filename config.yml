@@ -1,0 +1,70 @@
+language: en
+
+pipeline:
+- name: SpacyNLP
+  model: en_core_web_md
+- name: SpacyTokenizer
+- name: SpacyEntityExtractor
+- name: SpacyFeaturizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+  OOV_token: oov
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 2
+  max_ngram: 4
+- name: CRFEntityExtractor
+- name: DIETClassifier
+  epochs: 100
+  model_confidence: softmax
+  constrain_similarities: True
+  ranking_length: 5
+  evaluate_on_number_of_examples: 0
+  evaluate_every_number_of_epochs: 5
+  tensorboard_log_directory: "./tensorboard"
+  tensorboard_log_level: "epoch"
+- name: EntitySynonymMapper
+# - name: ResponseSelector
+#   epochs: 40
+#   retrieval_intent: out_of_scope
+#   scale_loss: false
+#   threshold: 0.7
+- name: ResponseSelector
+  epochs: 50
+  retrieval_intent: chitchat
+  model_confidence: softmax
+  constrain_similarities: True
+  scale_loss: false
+# - name: ResponseSelector
+#   retrieval_intent: fuseclassroom
+#   scale_loss: false
+#   epochs: 30
+#   threshold: 0.8
+# - name: ResponseSelector
+#   retrieval_intent: smalltalk
+#   scale_loss: false
+#   epochs: 70
+#   threshold: 0.
+- name: FallbackClassifier
+  threshold: 0.8
+  ambiguity_threshold: 0.1
+
+policies:
+- name: RulePolicy
+  core_fallback_threshold: 0.4
+  core_fallback_action_name: "action_default_ask_affirmation"
+- name: TEDPolicy
+  max_history: 20
+  epochs: 60
+  model_confidence: softmax
+  constrain_similarities: True
+  batch_size:
+  - 32
+  - 64
+  evaluate_on_number_of_examples: 0
+  evaluate_every_number_of_epochs: 5
+  tensorboard_log_directory: "./tensorboard"
+  tensorboard_log_level: "epoch"
+- name: AugmentedMemoizationPolicy
+  max_history: 20

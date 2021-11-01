@@ -1,0 +1,701 @@
+version: "2.0"
+nlu:
+- intent: Scholarships
+  examples: |
+    - scholarships available
+    - What are the scholarships available?
+    - what're scholarships available?
+    - what are the scholarships available?
+    - Do we get stipends for our progress in academics?
+    - Can you tell me about the scholarships available?
+    - Can you tell me info related to scholarships available?
+    - Can you help me with the scholarships available?
+    - State the scholarships available
+    - Help me with the scholarships available
+    - Tell me about the scholarships available
+    - Provide me the information on the scholarships available
+    - Info related to the scholarships available
+    - Information on scholarships available
+    - Info about scholarships available
+    - Information about scholarships available
+    - Details on scholarships available
+    - scholarships available in the college
+    - What are grants/aids available in the college?
+    - what grants are available in college?
+    - Aids provided in the college
+    - what is the subsidy available in the college?
+    - Can you tell me about the subsidy available in the college?
+    - Can you tell me info related to grants available in the college?
+    - Can you help me with the aids available in the college?
+    - What kind of support the college provide us in the form of a scholarship?
+    - What kind of scholarships are available?
+    - What kind of grants are available?
+    - State the scholarships available in the college
+    - Help me with the scholarships available in the college
+    - Tell me about the scholarships available in the college
+    - scholarship programmes
+    - What are scholarship programmes?
+    - What're scholarship programmes?
+    - What type of scholarships are available?
+    - What type of grants are available?
+    - Information on subsidy programmes
+    - Type of scholarships available in the college
+    - Different kinds of grants provided by the college.
+    - Different types of aids college provide us
+    - scholarship programs
+    - What are scholarship programs?
+    - What're scholarship programs?
+    - State the scholarships
+    - Help me with the scholarships
+    - Details on scholarships
+    - scholarships programs available
+    - Information on scholarships programs available
+    - merits programmes available
+    - what are merits programmes available?
+    - what are the merits programmes available?
+    - Can you tell me about the merits programmes available?
+    - State the merits programmes available
+    - What are merits programmes?
+    - what're the merits programmes?
+    - what are the merits programmes?
+    - Can you help me with the merits programmes?
+    - State the merits programmes
+    - Help me with the merits programmes
+    - Tell me about the merits programmes
+    - Provide me the information on the merits programmes
+    - Info about merits programmes
+    - Information about merits programmes
+    - Details on merits programmes
+    - available merits programmes
+    - what are the available merits programmes?
+    - Can you tell me about the available merits programmes?
+    - State the available merits programmes
+    - Details on available merits programmes
+    - fellowship programmes
+    - what are the fellowship programmes?
+    - Can you tell me about the fellowship programmes?
+    - State the fellowship programmes
+    - Help me with the fellowship programmes
+    - Tell me about the fellowship programmes
+    - Provide me the information on the fellowship programmes
+    - Info related to the fellowship programmes
+    - Information about fellowship programmes
+    - Details on fellowship programmes
+    - available fellowship programmes
+    - What are available fellowship programmes?
+    - Is there any fellowship program in the college?
+    - Is there any fellowship program available in the college?
+    - Is there any type of grant available in the college?
+    - Are there any aids the college provides us?
+    - Is there any subsidy program available for the students?
+    - List the scholarships available in the college
+    - what scholarships can I take
+    - Are there any fellowship programs?
+    - Scholarships programs detailed info
+    - How many scholarships are available
+    - What are the eligibility requirements for scholarships
+    - Can anyone apply for scholarships
+    - tell me available scholarships we have in college
+    - Info on scholarships we have
+    - merits available
+    - info on merits available on the school
+    - give me information on fellowship available
+    - List all of the available aids
+    - List all types of grants school provide us
+    - List all the fellowship’s program college have
+- intent: Fees
+  examples: |
+    - fee policies
+    - What are fee policies?
+    - what're fee policies?
+    - what are the fee policies?
+    - Can you tell me about the fee policies?
+    - Can you tell me info related to fee policies?
+    - Can you help me with the fee policies?
+    - State the fee policies
+    - Help me with the fee policies
+    - Tell me about the fee policies
+    - Provide me the information on the fee policies
+    - Info related to the fee policies
+    - Information on fee policies
+    - Info about fee policies
+    - Information about fee policies
+    - Details on fee policies
+    - available fee policies
+    - State the available fee policies
+    - Help me with the available fee policies
+    - fees
+    - tuition fees
+    - Details on tuition fees
+    - fee deadline
+    - college fee policies
+    - What are college fee policies?
+    - Information on college fee policies
+    - Details on college fee policies
+    - my fee status
+    - tuition fee of the college
+    - What is the tuition fee of the college?
+    - what’s the tuition fee of the college?
+    - Can you tell me about the tuition fee of the college?
+    - State the tuition fee of the college
+    - Provide me the information on the tuition fee of the college
+    - college fee structure
+    - What is the college fee structure?
+    - what's the college fee structure?
+    - fee structure
+    - what's the fee structure?
+    - what’s the fee structure?
+    - Can you tell me about the fee structure of the school?
+    - State the fee structure of the school
+    - fee structures and policies
+    - what're fee structures and policies?
+    - what are the fee structures and policies?
+    - Can you tell me about the fee structures and policies?
+    - Can you tell me info related to fee structures and policies?
+    - State the fee structures and policies
+    - Help me with the fee structures and policies
+    - Tell me about the fee structures and policies
+    - Information about fee structures and policies
+    - Details on fee structures and policies
+    - cost of the tuition fees
+    - When are my college fee due dates?
+    - What is the cost of the tuition fees?
+    - Can you tell me about the cost of the tuition fees?
+    - State the cost of the tuition fees
+    - Info about my dues
+    - Information about my dues
+    - Details on my dues
+    - Give me the fee policy of the college
+    - College Fee policy
+    - Give me info on fees
+    - give me the fee policy information
+    - What is the college fee policy
+    - Information on college fees
+    - How often fees have to be paid
+    - Is there any info on fee policy
+    - Can you give me fee structure plans and policy
+    - College fee information
+    - Fee policy details
+    - info on college fee policies
+    - fee policy of the college we have
+    - college fee
+    - What is the fee due date
+    - When is the final day for fee submissions
+    - When is the last day for fee due clearance?
+    - Last day for fee submission
+    - Fee submission due dates
+    - When is the deadline for fee payment
+    - When should I clear my fees
+    - Fee clearance date
+    - Final date of Fee submission
+    - Fee submission deadline
+    - When’s the fee clearance due date
+    - Due dates for fee submission
+    - fee due dates
+    - last fee date
+    - Fee late policy
+    - What happens if I was unable to pay in time
+    - Is there any fine for late fee submission
+    - Is there any late fee fines?
+    - Information on late fee policy
+    - Give me details on the late fee policy
+    - Is there any information on the late fee policy
+    - What fines do I have to pay if I’m late for fee submission
+    - Are there any consequences of late fee payment
+    - Will I be fined if I’m unable to pay dues in time?
+    - fine for the late fee
+    - charge applied for the late fee submission
+    - do college fine for late fee
+    - I'm late for the fee submission. What happens?
+    - what happens if I pay late?
+    - if I pay after the due date, what happens?
+    - Is there any late fee policy?
+    - college late fee policies
+    - info on college late fee policies
+    - late fee policy of the college we have
+- intent: Infrastructure and facilities
+  examples: |
+    - infrastructure and facilities
+    - what's infrastructure and facilities?
+    - what are the infrastructure and facilities?
+    - Can you tell me about the infrastructure and facilities?
+    - Can you tell me info related to infrastructure and facilities?
+    - Can you help me with the infrastructure and facilities?
+    - State the infrastructure and facilities
+    - Help me with the infrastructure and facilities
+    - Tell me about the infrastructure and facilities
+    - Provide me the information on the infrastructure and facilities
+    - Info related to the infrastructure and facilities
+    - Information on infrastructure and facilities
+    - Info about infrastructure and facilities
+    - Information about infrastructure and facilities
+    - Details on infrastructure and facilities
+    - college infrastructure and facilities
+    - Give me information on college facilities
+    - College facilities
+    - Info on College infrastructures and facilities
+    - What facilities are available from the college
+    - What are the college facilities
+    - College facilities details
+    - What facilities are provided by the college
+    - Does the college provide extra facilities
+    - I’m interested in college facilities
+    - Do the college have different facilities
+    - What facilities do students have access to
+    - facilities info we have in college
+    - College facilities information
+    - available College facilities
+    - What's college infrastructure and facilities?
+    - What are the college infrastructure and facilities?
+    - Information about college infrastructure and facilities
+    - Details on college infrastructure and facilities
+    - available infrastructures
+    - what are the available infrastructures?
+    - Can you tell me about the available infrastructures?
+    - Can you tell me info related to available infrastructures?
+    - Can you help me with the available infrastructures?
+    - State the available infrastructures
+    - Help me with the available infrastructures
+    - Tell me about the available infrastructures
+    - available facilities
+    - what are the available facilities?
+    - State the available facilities
+    - Help me with the available facilities
+    - Tell me about the available facilities
+    - facilities available
+    - Can you tell me about the facilities available?
+    - Can you tell me info related to facilities available?
+    - Can you help me with the facilities available?
+    - Information about facilities available
+    - Details on facilities available
+    - infrastructures in the college
+    - Info related to the infrastructures in the college
+    - Information on infrastructures in the college
+    - Info about infrastructures in the college
+    - Information about infrastructures in the college
+    - Details on infrastructures in the college
+    - What are the college facilities?
+    - what're the college facilities?
+    - Info related to the college facilities
+    - Information on college facilities
+    - Info about college facilities
+    - Information about college facilities
+    - Details on college facilities
+    - facilities provided by the college
+    - What are the facilities provided by the college?
+    - What facilities are provided by the college?
+    - Can you tell me about the facilities provided by the college?
+    - Can you tell me info related to facilities provided by the college?
+    - Can you help me with the facilities provided by the college?
+    - State the facilities provided by the college
+    - Help me with the facilities provided by the college
+    - Tell me about the facilities provided by the college
+    - Provide me the information on the facilities provided by the college
+    - Info related to the facilities provided by the college
+    - Information on facilities provided by the college
+    - Info about facilities provided by the college
+    - Information about facilities provided by the college
+    - Details on facilities provided by the college
+    - infrastructures provided by the college
+    - What are infrastructures provided by the college?
+    - what're infrastructures provided by the college?
+    - what are the infrastructures provided by the college?
+    - Can you tell me about the infrastructures provided by the college?
+    - Can you tell me info related to infrastructures provided by the college?
+    - Can you help me with the infrastructures provided by the college?
+    - State the infrastructures provided by the college
+    - Help me with the infrastructures provided by the college
+    - list of the facilities
+    - What is the list of the facilities?
+    - what's the list of the facilities?
+    - State the list of the facilities
+    - Help me with the list of the facilities
+    - Tell me about the list of the facilities
+    - Provide me the information on the list of the facilities
+    - list of the infrastructure
+    - Help me with the list of the infrastructure
+    - Tell me about the list of the infrastructure
+    - Provide me the information on the list of the infrastructure
+    - Info related to the list of the infrastructure
+    - list of the available facilities
+    - Is there a computer facility in college?
+    - Is there any computer facilities in college?
+    - What is the list of the available facilities?
+    - what's the list of the available facilities?
+    - Can you tell me about the list of the available facilities?
+    - Can you tell me info related to the list of the available facilities?
+    - Can you help me with the list of the available facilities?
+    - State the list of the available facilities
+    - What is the list of the available infrastructure?
+    - Provide me the information on the list of the available infrastructure
+    - Info related to the list of the available infrastructure
+    - Information on the list of the available infrastructure
+    - Info about the list of the available infrastructure
+    - Information about the list of the available infrastructure
+    - Details on the list of the available infrastructure
+    - List all the types of facilities and infrastructures of the school
+    - What types of infrastructures college provide us?
+    - Is there transportation facilities available?
+    - What types of transportation facilities are available?
+    - Is it a bus or van type?
+    - Are the course books available in the library?
+    - Is it possible to have a library to read the course books?
+    - What is the best book available for course books?
+    - What are some of the library books for the course?
+    - What is the collection of books in the library?
+    - Are these course books available in the library?
+    - What are the best library books for a course?
+    - Can I find course books in the library
+    - Are there well-equipped labs in the school/colleges?
+    - Are there any library facilities available in the college?
+    - Are there playgrounds public for the students?
+    - How are the sanitation facilities in the school?
+    - Is a computer lab available?
+    - can we access the library?
+    - Is there a canteen available in the school?
+    - canteen location
+    - Food rate in the canteen
+    - What type of food do we eat in the canteen
+    - price of momo
+    - Menu availability
+- intent: Exams
+  examples: |
+    - Info related to the test routine
+    - Information on test routine
+    - Info about test routine
+    - Information about test routine
+    - Details on test routine
+    - exams timeline
+    - What is the exam timeline?
+    - makeup exams
+    - makeup examinations for internal exams
+    - Are there any makeup examinations if I fail internal examinations?
+    - What are the consequences if I fail an internal examination?
+    - What is the procedure for makeup examinations if I fail in internal examinations?
+    - Are there any makeup examinations for failing internal exams?
+    - What is the procedure for makeup examinations when you fail in the internal examinations?
+    - Do I need to give another exam if I fail in internals?
+    - What would happen if I missed mid-term and pre-semester examinations?
+    - What will happen if I missed my mid-term and pre-semester examination?
+    - What would happen to me if I missed my midterm and pre-semester examinations?
+    - What will happen if I missed my mid-term and pre-semester exams?
+    - When I fail on internals, do I need to give another exam?
+    - Should I give another exam if I fail in internals?
+    - Should we give another exam if we failed in the internals.?
+    - State the exams timeline
+    - Help me with the exams timeline
+    - Tell me about the exams timeline
+    - Provide me the information on the exams timeline
+    - Info related to the exams timeline
+    - Information on exams timeline
+    - Info about exams timeline
+    - Information about exams timeline
+    - Details on exams timeline
+    - exam time
+    - State the exam time
+    - Help me with the exam time
+    - Details on exam time
+    - test timeline
+    - State the test timeline
+    - Help me with the test timeline
+    - Tell me about the test timeline
+    - Details on test timeline
+    - examination datetime
+    - what is the examination datetime?
+    - Can you tell me about the examination datetime?
+    - Info related to the examination datetime
+    - Information on examination datetime
+    - examination schedule
+    - Can you help me with the examination schedule?
+    - State the examination schedule
+    - Help me with the examination schedule
+    - Tell me about the examination schedule
+    - Provide me the information on the examination schedule
+    - Details on the examination schedule
+    - examination routines
+    - What are examination routines?
+    - what're the examination routines?
+    - Can you help me with the examination routines?
+    - State the examination routines
+    - Information on examination routines
+    - exam
+    - exam schedule
+    - Info on the exam date
+    - Information on exam time
+    - can you help me with the exam schedule?
+    - help me with examination datetime
+    - tell me bout my exam date
+    - When are my exams?
+    - schedule for exam
+- intent: Notices
+  examples: |
+    - notices
+    - What are the upcoming notices?
+    - Can you help me with today's notice?
+    - Can you tell me notice of today
+    - Can you tell me about recent notices?
+    - Can you tell me info related to notice?
+    - Can you help me with notices?
+    - Recent notices
+    - what is today's announcement?
+    - tell me news
+    - what is today's bulletin
+    - bulletin
+    - announcement
+    - adverts
+    - releases
+    - notifications
+    - memos
+    - directives
+    - approaching notifications
+    - upcoming notifications
+    - nearing notifications
+    - recent announcements
+    - recent notifications
+    - upcoming announcements
+    - coming notices
+    - forthcoming announcements
+    - forthcoming notices
+    - forthcoming memos
+    - tell me directives
+    - new announcement
+    - What are the upcoming announcements?
+- intent: Extra-curricular activities
+  examples: |
+    - extra-curricular activities
+    - what're extra-curricular activities?
+    - what are the extra-curricular activities?
+    - Can you tell me about the extra-curricular activities?
+    - Can you tell me info related to extra-curricular activities?
+    - Can you help me with the extra-curricular activities?
+    - State the extra-curricular activities
+    - Help me with the extra-curricular activities
+    - Tell me about the extra-curricular activities
+    - Provide me the information on the extra-curricular activities
+    - Info related to the extra-curricular activities
+    - Information on extra-curricular activities
+    - Info about extra-curricular activities
+    - Information about extra-curricular activities
+    - Details on extra-curricular activities
+    - available extra-curricular activities
+    - what extra-curricular activities are available?
+    - what are the available extra-curricular activities?
+    - list of extra-curricular activities
+    - Can you help in listing the extra-curricular activities of college?
+    - list of available extra-curricular activities
+    - Can you list the available extra-curricular activities?
+    - Help me in listing the  available extra-curricular activities
+    - extra-curricular programmes
+    - What are the extra-curricular programmes?
+    - Can you tell me about the extra-curricular programmes?
+    - State the extra-curricular programmes
+    - Help me with the extra-curricular programmes
+    - Tell me about the extra-curricular programmes
+    - Provide me the information on the extra-curricular programmes
+    - extra-curricular programs
+    - what are the extra-curricular programs?
+    - Info related to the extra-curricular programs
+    - Information on extra-curricular programs
+    - Info about extra-curricular programs
+    - Information about extra-curricular programs
+    - Details on extra-curricular programs
+    - available extra-curricular programmes
+    - what are the available extra-curricular programmes?
+    - Information on available extra-curricular programmes
+    - Info about available extra-curricular programmes
+    - Information about available extra-curricular programmes
+    - Details on available extra-curricular programmes
+    - available extra-curricular programs
+    - What are available extra-curricular programs?
+    - Can you tell me about the available extra-curricular programs?
+    - State the available extra-curricular programs
+    - Help me with the available extra-curricular programs
+    - what are the available extra-curricular activities in the college?
+    - Can you tell me about the available extra-curricular activities in the college?
+    - Can you tell me info related to available extra-curricular activities in the college?
+    - Info related to the available extra-curricular activities in the college
+    - list of extra-curricular activities of the college
+    - list the extra-curricular activities of the college
+    - college extra-curricular programmes
+    - Help me with the college extra-curricular programmes
+    - Tell me about the college extra-curricular programmes
+    - Provide me the information on the college extra-curricular programmes
+    - what are the college extra-curricular programs?
+    - Info about college extra-curricular programs
+    - Information about college extra-curricular programs
+    - Details on college extra-curricular programs
+    - available extra-curricular programmes in the college
+    - Information about available extra-curricular programmes in the college
+    - Details on available extra-curricular programmes in the college
+    - list of the available extra-curricular programs in the college
+    - Can you list the available extra-curricular programs in the college?
+    - Can you help me in listing the available extra-curricular programs in the college?
+    - Which type of sports are available in the school?
+    - Are there any after-school programs available?
+    - What type of after-school programs are available?
+    - What type of after-college programs are available?
+    - What kind of extracurricular programs are available?
+    - List the different types of after-school programs?
+    - Is there any foreign language programs in the extracurricular activities?
+    - Is there any sports as a part of the after-school program?
+    - can we play football in college?
+    - Is there a basketball court in the school?
+    - Can we play outdoor games in the school?
+    - Are there any indoor games like chess, ludo in the school?
+- intent: Clubs
+  examples: |
+    - What types of clubs are present in the school?
+    - List the names of the clubs available in the college
+    - Different types of clubs
+    - clubs
+    - Which are the popular clubs of school?
+    - Can I join the student union club?
+    - Can I be a part of the student union club?
+    - List of the clubs
+    - Different kinds of college clubs
+    - Which club should I join?
+    - Requirements for joining the club
+    - Help in listing the club
+    - State the names of the clubs in the school
+    - Information about the clubs
+    - Info on clubs
+    - Can you list the clubs present in the school?
+    - Can you name the president of each club?
+    - Details on the available clubs
+    - Clubs detailed info
+    - clubs detailed information
+    - criteria for joining each clubs
+    - Is there any volunteering club in the school?
+    - What type of volunteering works clubs provide us?
+    - is there a way to form a club?
+    - How can one form a club?
+    - What is the process of forming a club?
+    - What should one do to form a club?
+    - Give me info on clubs in the school
+    - Join the student union club
+    - Join the debate team
+    - Who can I contact to join the club?
+    - What should we do to join a club?
+    - When can I join a club?
+    - Who can I contact to start the club?
+    - Can anyone who can help me enter a sanity club?
+    - How can I create my own club?
+    - create a new club
+    - Steps for creating a club
+    - How can you contact your student clubs?
+    - How do I contact the student clubs?
+    - How do I get in contact with the student clubs?
+    - Interested to join student clubs; where can I apply
+    - Where can I apply for student clubs?
+    - Can I make my own club?
+    - Can I recreate a club on my own?
+    - Can you make a club?
+    - Can I make a club like eds?
+    - How do I create a club for myself?
+    - can I make a new club
+    - Can I start a new club?
+    - How do I form a club?
+    - How do I start a club?
+    - How can I create a club?
+    - How do I set up a club?
+    - Can a school team form a new club?
+    - Is it possible to have an online club?
+    - Can students set up clubs to work on different topics?
+    - My group (friends and me) want to open a new departmental club/organization.
+    - My group (friends and me) wants to open a new departmental club.
+    - My group (friends and me) want to open a departmental club/organization.
+    - What process should I follow to form a new club
+    - What step should I follow to form a club?
+    - How does one form a club?
+    - What do I need to do to form a new club?
+    - How do I form a new club?
+    - How should I start a new club?
+    - How can one form a new club?
+    - I want to form a new club
+    - I want to start a new club. What will be my main intention?
+    - I want to create a new club. What is the best way to do this?
+    - I want to form a new club and I want to have another club!
+    - I want to start a club. I have many friends already with them. How can I do that?
+    - I am interested in forming a new club. What is the process for this?
+    - I want to form my club.
+    - What is the process to form a new club?
+    - How can I start a club?
+    - How do I create my own club?
+    - How do I form a new club? What are the requirements?
+    - What do I have to do to form a club?
+    - What should be the process to form a new club?
+    - Can students form a new club?
+    - Should students form a new club?
+    - How do I organize and start a new club?
+    - Is it possible to form a club?
+    - How can I form a new club?
+- intent: Awards
+  examples: |
+    - awards in the school
+    - awards in the college
+    - What types of awards college provide us
+    - List the name of awards in the  school
+    - List the activities through which we can get awards
+    - List the activities through which we can get recognition
+    - Is there any leadership award?
+    - Can we get the prize for the different sports competitions?
+    - Help me listing the various awards name
+    - How do I start getting nominated for a leadership award?
+    - How do I get to in leadership awards?
+    - How do I get elected to the Leadership Award?
+    - How do I get nominated for leadership?
+    - How do I get a leadership award?
+    - how do I get a leadership award
+    - What are the most important factors in achieving a leadership award,
+    - How do I get the leadership award?
+    - How do you get a Leadership Award from a professor?
+    - how can I win a leadership award
+    - Is getting recognition helpful for us?
+    - What type of awards will be helpful for future growth?
+- intent: Operational hours
+  examples: |
+    - Operations hours of the college
+    - Give me information about the operational hours of the facilities
+    - College hours
+    - College operation hour schedule
+    - What are the college operation open hours
+    - Open hours for college operation
+    - Timetable for college operation
+    - Open schedules of college operation
+    - College operation hours
+    - What is the college operation time schedule
+    - can you tell me College hours
+    - please tell me College hours
+    - info about College hours
+    - when are the office hours for ...
+    - Can you tell me when the office opens ....
+    - Office time ..
+    - Office timing ...
+    - When are ... open
+    - Is .... on Saturday/Sunday, etc
+    - Can I know the visiting time for the office?
+    - Visiting time
+    - At what time we can visit….
+    - Opening time
+    - Open time
+    - At what time ….. opens
+    - Closing time
+    - At what time …... closes
+- intent: Events
+  examples: |
+    - Available Events
+    - What is happening in the school/colkege?
+    - Events  for students
+    - upcoming events
+    - Any Educational Events
+    - events for entertainment
+    - School Festivals
+    - Memorial events
+    - School Events
+    - Events for ……….. Students
+    - Competitive events
+    - Weekend events
+    - Knowledge Sharing Events
+    - most joyful events in school/college life
+    - What are the best moment of school
+    - most prominent memories
